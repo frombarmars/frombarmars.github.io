@@ -1,300 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nyi Lynn Htwe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Nyi Lynn Htwe</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#social">Social</a></li>
-                </ul>
-                <div class="menu-toggle">☰</div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <div class="logo">Nyi Lynn Htwe</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#social">Social</a></li>
+          </ul>
+          <div class="menu-toggle">☰</div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container">
-                <h1>Welcome to my world</h1>
-                <p>I love Blockchain.</p>
-            </div>
-        </section>
+      <section id="home">
+        <div class="container">
+          <h1>Welcome to my world</h1>
+          <p>I love Blockchain.</p>
+        </div>
+      </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project cards will be dynamically loaded -->
-                </div>
-            </div>
-        </section>
+      <section id="projects">
+        <div class="container">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+            <!-- Project cards will be dynamically loaded -->
+          </div>
+        </div>
+      </section>
 
-        <section id="blog">
-            <div class="container">
-                <h2>Blog Posts</h2>
-                <div class="blog-list">
-                    <!-- Blog posts list will be dynamically loaded -->
-                </div>
-                <div class="blog-content" id="blog-content" style="display: none;">
-                    <!-- Individual blog post content will be loaded here -->
-                </div>
-            </div>
-        </section>
+      <section id="blog">
+        <div class="container">
+          <h2>Blog Posts</h2>
+          <div class="blog-list">
+            <!-- Blog posts list will be dynamically loaded -->
+          </div>
+          <div class="blog-content" id="blog-content" style="display: none">
+            <!-- Individual blog post content will be loaded here -->
+          </div>
+        </div>
+      </section>
 
-        <section id="gallery">
-            <div class="container">
-                <h2>Photo Gallery</h2>
-                <div class="gallery-grid">
-                    <!-- Gallery images will be dynamically loaded -->
-                </div>
-            </div>
-        </section>
+      <section id="gallery">
+        <div class="container">
+          <h2>Photo Gallery</h2>
+          <div class="gallery-grid">
+            <!-- Gallery images will be dynamically loaded -->
+          </div>
+        </div>
+      </section>
 
-        <section id="social">
-            <div class="container">
-                <h2>Connect With Me</h2>
-                <div class="social-links">
-                    <!-- Social links will be dynamically loaded -->
-                </div>
-            </div>
-        </section>
+      <section id="social">
+        <div class="container">
+          <h2>Connect With Me</h2>
+          <div class="social-links">
+            <!-- Social links will be dynamically loaded -->
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 NyiLynnHtwe. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 NyiLynnHtwe. All rights reserved.</p>
+      </div>
     </footer>
 
     <script>
-        // Sample data - replace with your actual data
-        const projects = [
-            {
-                title: "FlickShare",
-                description: "Letterboxd meets Web3 — movie reviews powered by Worldcoin."
-            },
-            {
-                title: "Sui Maps",
-                description: "Next-gen mindmaps: create, edit, and mint AI-driven ideas on Sui."
-            },
-        ];
+      // Sample data - replace with your actual data
+      const projects = [
+        {
+          title: "FlickShare",
+          description:
+            "Letterboxd meets Web3 — movie reviews powered by Worldcoin.",
+        },
+        {
+          title: "Sui Maps",
+          description:
+            "Next-gen mindmaps: create, edit, and mint AI-driven ideas on Sui.",
+        },
+      ];
 
+      // Sample blog posts - replace with your actual markdown files
+      const blogPosts = [
+        {
+          title: "Learn Rust in 7 Days: A Beginner's Guide",
+          date: "2025-09-29",
+          file: "blogs/learningrust.md",
+          excerpt:
+            "This 7-day plan will help you get started with Rust.",
+        },
+      ];
 
-        // Sample blog posts - replace with your actual markdown files
-        const blogPosts = [
-            {
-                title: "Getting Started with React",
-                date: "2023-05-15",
-                file: "blogs/learningrust.md",
-                excerpt: "Learn the basics of React and how to create your first component."
-            },
-        ];
+      // Sample gallery images - replace with your actual images
+      const galleryImages = [
+        "./gallery/bayinma.JPG",
+        "./gallery/best.JPG",
+        "./gallery/flower.jpg",
+        "./gallery/lambio.JPG",
+        "./gallery/me.JPG",
+        "./gallery/me2.JPG",
+        "./gallery/muaklek.JPG",
+        "./gallery/nice_q1.JPG",
+        "./gallery/waiwai.JPG",
+      ];
 
-        // Sample gallery images - replace with your actual images
-        const galleryImages = [
-            "./gallery/bayinma.JPG",
-            "./gallery/best.JPG",
-            "./gallery/flower.jpg",
-            "./gallery/lambio.JPG",
-            "./gallery/me.JPG",
-            "./gallery/me2.JPG",
-            "./gallery/muaklek.JPG",
-            "./gallery/nice_q1.JPG",
-            "./gallery/waiwai.JPG",
-        ];
+      // Social links - replace with your actual profiles
+      const socialLinks = [
+        { name: "GitHub", url: "https://github.com/frombarmars" },
+        { name: "LinkedIn", url: "https://linkedin.com/in/nyilynnhtwe" },
+        { name: "Twitter", url: "https://x.com/lynnthelight" },
+        { name: "Instagram", url: "https://www.instagram.com/nyi_lynn_htwee/" },
+      ];
 
-        // Social links - replace with your actual profiles
-        const socialLinks = [
-            { name: "GitHub", url: "https://github.com/frombarmars" },
-            { name: "LinkedIn", url: "https://linkedin.com/in/nyilynnhtwe" },
-            { name: "Twitter", url: "https://x.com/lynnthelight" },
-            { name: "Instagram", url: "https://www.instagram.com/nyi_lynn_htwee/" }
-        ];
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function () {
-            // Load projects
-            const projectsGrid = document.querySelector('.projects-grid');
-            projects.forEach(project => {
-                const projectCard = document.createElement('div');
-                projectCard.className = 'project-card';
-                projectCard.innerHTML = `
+      // Initialize the page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load projects
+        const projectsGrid = document.querySelector(".projects-grid");
+        projects.forEach((project) => {
+          const projectCard = document.createElement("div");
+          projectCard.className = "project-card";
+          projectCard.innerHTML = `
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                 `;
-                projectsGrid.appendChild(projectCard);
-            });
+          projectsGrid.appendChild(projectCard);
+        });
 
-            // Load blog posts
-            const blogList = document.querySelector('.blog-list');
-            blogPosts.forEach(post => {
-                const blogPost = document.createElement('div');
-                blogPost.className = 'blog-post';
-                blogPost.innerHTML = `
+        // Load blog posts
+        const blogList = document.querySelector(".blog-list");
+        blogPosts.forEach((post) => {
+          const blogPost = document.createElement("div");
+          blogPost.className = "blog-post";
+          blogPost.innerHTML = `
                     <h3>${post.title}</h3>
                     <div class="date">${post.date}</div>
                     <p class="excerpt">${post.excerpt}</p>
                     <a href="#" data-file="${post.file}">Read More</a>
                 `;
-                blogList.appendChild(blogPost);
-            });
-
-            // Add click event to blog post links
-            document.querySelectorAll('.blog-post a').forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const file = this.getAttribute('data-file');
-                    loadBlogPost(file);
-                });
-            });
-
-            // Load gallery images
-            const galleryGrid = document.querySelector('.gallery-grid');
-            galleryImages.forEach(image => {
-                const galleryItem = document.createElement('div');
-                galleryItem.className = 'gallery-item';
-                galleryItem.innerHTML = `<img src="${image}" alt="Gallery Image">`;
-                galleryGrid.appendChild(galleryItem);
-            });
-
-            // Initialize lightbox AFTER gallery images are loaded
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            const lightboxClose = document.querySelector('.lightbox-close');
-
-            // Add click event to gallery images
-            document.querySelectorAll('.gallery-item img').forEach(img => {
-                img.addEventListener('click', () => {
-                    lightbox.style.display = 'flex';
-                    lightboxImg.src = img.src;
-                });
-            });
-
-            // Close lightbox when clicking outside image or on close button
-            lightbox.addEventListener('click', (e) => {
-                if (e.target !== lightboxImg && e.target !== lightboxClose) {
-                    lightbox.style.display = 'none';
-                }
-            });
-
-            lightboxClose.addEventListener('click', (e) => {
-                e.preventDefault();
-                lightbox.style.display = 'none';
-            });
-
-            // Close with Escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    lightbox.style.display = 'none';
-                }
-            });
-            // Load social links
-            const socialLinksContainer = document.querySelector('.social-links');
-            socialLinks.forEach(link => {
-                const socialLink = document.createElement('a');
-                socialLink.className = 'social-link';
-                socialLink.href = link.url;
-                socialLink.target = "_blank";
-                socialLink.textContent = link.name;
-                socialLinksContainer.appendChild(socialLink);
-            });
-
-            // Mobile menu toggle
-            document.querySelector('.menu-toggle').addEventListener('click', function () {
-                document.querySelector('.nav-links').classList.toggle('active');
-            });
-
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        // Close mobile menu if open
-                        document.querySelector('.nav-links').classList.remove('active');
-
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
+          blogList.appendChild(blogPost);
         });
 
-        // Function to load and display a blog post
-        async function loadBlogPost(file) {
-            const blogContent = document.getElementById('blog-content');
-            const blogList = document.querySelector('.blog-list');
+        // Add click event to blog post links
+        document.querySelectorAll(".blog-post a").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const file = this.getAttribute("data-file");
+            loadBlogPost(file);
+          });
+        });
 
-            try {
-                const response = await fetch(file);
-                if (!response.ok) {
-                    throw new Error(`Could not load blog post: ${response.statusText}`);
-                }
-                const markdown = await response.text();
+        // Load gallery images
+        const galleryGrid = document.querySelector(".gallery-grid");
+        galleryImages.forEach((image) => {
+          const galleryItem = document.createElement("div");
+          galleryItem.className = "gallery-item";
+          galleryItem.innerHTML = `<img src="${image}" alt="Gallery Image">`;
+          galleryGrid.appendChild(galleryItem);
+        });
 
-                // Convert markdown to HTML
-                const htmlContent = marked.parse(markdown);
+        // Initialize lightbox AFTER gallery images are loaded
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxClose = document.querySelector(".lightbox-close");
 
-                // Display the blog content and hide the list
-                blogContent.innerHTML = htmlContent;
-                blogContent.style.display = 'block';
-                blogList.style.display = 'none';
+        // Add click event to gallery images
+        document.querySelectorAll(".gallery-item img").forEach((img) => {
+          img.addEventListener("click", () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+          });
+        });
 
-                // Add a back button
-                const backButton = document.createElement('a');
-                backButton.href = '#';
-                backButton.textContent = '← Back to Blog List';
-                backButton.style.display = 'block';
-                backButton.style.marginBottom = '20px';
-                backButton.style.color = '#555';
-                backButton.style.textDecoration = 'none';
-                backButton.style.fontWeight = '500';
+        // Close lightbox when clicking outside image or on close button
+        lightbox.addEventListener("click", (e) => {
+          if (e.target !== lightboxImg && e.target !== lightboxClose) {
+            lightbox.style.display = "none";
+          }
+        });
 
-                backButton.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    blogContent.style.display = 'none';
-                    blogList.style.display = 'block';
-                });
+        lightboxClose.addEventListener("click", (e) => {
+          e.preventDefault();
+          lightbox.style.display = "none";
+        });
 
-                blogContent.insertBefore(backButton, blogContent.firstChild);
+        // Close with Escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            lightbox.style.display = "none";
+          }
+        });
+        // Load social links
+        const socialLinksContainer = document.querySelector(".social-links");
+        socialLinks.forEach((link) => {
+          const socialLink = document.createElement("a");
+          socialLink.className = "social-link";
+          socialLink.href = link.url;
+          socialLink.target = "_blank";
+          socialLink.textContent = link.name;
+          socialLinksContainer.appendChild(socialLink);
+        });
 
-                // Scroll to the blog section
-                window.scrollTo({
-                    top: document.getElementById('blog').offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            } catch (error) {
-                blogContent.innerHTML = `<p style="color: red;">Error loading blog post: ${error.message}</p>`;
-                blogContent.style.display = 'block';
-                blogList.style.display = 'none';
+        // Mobile menu toggle
+        document
+          .querySelector(".menu-toggle")
+          .addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("active");
+          });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              // Close mobile menu if open
+              document.querySelector(".nav-links").classList.remove("active");
+
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
             }
+          });
+        });
+      });
+
+      // Function to load and display a blog post
+      async function loadBlogPost(file) {
+        const blogContent = document.getElementById("blog-content");
+        const blogList = document.querySelector(".blog-list");
+
+        try {
+          const response = await fetch(file);
+          if (!response.ok) {
+            throw new Error(`Could not load blog post: ${response.statusText}`);
+          }
+          const markdown = await response.text();
+
+          // Convert markdown to HTML
+          const htmlContent = marked.parse(markdown);
+
+          // Display the blog content and hide the list
+          blogContent.innerHTML = htmlContent;
+          blogContent.style.display = "block";
+          blogList.style.display = "none";
+
+          // Add a back button
+          const backButton = document.createElement("a");
+          backButton.href = "#";
+          backButton.textContent = "← Back to Blog List";
+          backButton.style.display = "block";
+          backButton.style.marginBottom = "20px";
+          backButton.style.color = "#555";
+          backButton.style.textDecoration = "none";
+          backButton.style.fontWeight = "500";
+
+          backButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            blogContent.style.display = "none";
+            blogList.style.display = "block";
+          });
+
+          blogContent.insertBefore(backButton, blogContent.firstChild);
+
+          // Scroll to the blog section
+          window.scrollTo({
+            top: document.getElementById("blog").offsetTop - 80,
+            behavior: "smooth",
+          });
+        } catch (error) {
+          blogContent.innerHTML = `<p style="color: red;">Error loading blog post: ${error.message}</p>`;
+          blogContent.style.display = "block";
+          blogList.style.display = "none";
         }
+      }
     </script>
     <!-- Lightbox container -->
     <div id="lightbox" class="lightbox">
-        <a href="#" class="lightbox-close">&times;</a>
-        <img id="lightbox-img" src="" alt="Full Size">
+      <a href="#" class="lightbox-close">&times;</a>
+      <img id="lightbox-img" src="" alt="Full Size" />
     </div>
-</body>
-
+  </body>
 </html>
